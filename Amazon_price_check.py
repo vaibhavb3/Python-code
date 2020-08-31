@@ -33,20 +33,20 @@ def check_price():
     print(title.strip())
 
 def send_mail():
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP('smtp.gmail.com',###)
     server.ehlo()
     server.starttls()
     server.ehlo()
     
-    server.login('1995vaibhavbv@gmail.com', 'tyajyefdzwjumpsz')
+    server.login('#############@gmail.com', '##########')
     
     subject = "HEY PRICE FELL DOWN"
     body = 'https://www.amazon.in/255-Bluetooth-Wireless-Earphone-Immersive/dp/B07C2VJXP4/ref=sr_1_3?crid=DGCMK62U0F3B&keywords=boat+bluetooth+headphones&qid=1575830467&s=electronics&sprefix=boat+%2Celectronics%2C325&sr=1-3'
     
     msg = f"Subject: {subject}\n\n{body}"
     server.sendmail(
-            "1995vaibhavbv@gmail.com",
-            "vaibhavbv174@gmail.com",
+            "###########@gmail.com",
+            "############@gmail.com",
             msg
     )
     print("HEY EMAIL HAS BEEN SENT")
